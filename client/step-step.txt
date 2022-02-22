@@ -1,0 +1,2 @@
+cd client -> npm start
+cd api -> nodemon index
