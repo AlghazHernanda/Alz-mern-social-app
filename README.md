@@ -2,7 +2,7 @@
 ![Social Media Image](https://github.com/AlghazHernanda/Alz-mern-social-app/blob/main/client/social-media-feed.JPG?raw=true)
 ## This website was built using MERN stack and other, namely:
 - **MongoDB Database**
-   - NoSQL Database for storing data
+   - NoSQL Database for storing users data, feed data, followers and following data, likes data
 - **Express.js** 
    - Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications
 - **React.js**
