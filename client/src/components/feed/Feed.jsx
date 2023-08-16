@@ -6,7 +6,7 @@ import axios from "axios";
 import { AuthContext } from "../../context/AuthContext";
 
 export default function Feed({ username }) {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]);  // State untuk menyimpan daftar postingan
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
