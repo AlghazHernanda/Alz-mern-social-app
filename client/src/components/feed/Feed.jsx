@@ -14,14 +14,16 @@ export default function Feed({ username }) {
       const res = username
         ? await axios.get("/posts/profile/" + username)
         : await axios.get("posts/timeline/" + user._id);
+
+       // Mengatur daftar postingan dan mengurutkannya berdasarkan tanggal pembuatan
       setPosts(
         res.data.sort((p1, p2) => {
           return new Date(p2.createdAt) - new Date(p1.createdAt);
         })
       );
     };
-    fetchPosts();
-  }, [username, user._id]);
+    fetchPosts(); // Memanggil fungsi untuk mengambil postingan saat komponen dimuat
+  }, [username, user._id]); 
 
   return (
     <div className="feed">
