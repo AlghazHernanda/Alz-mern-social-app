@@ -7,7 +7,7 @@ import { AuthContext } from "../../context/AuthContext";
 
 export default function Feed({ username }) {
   const [posts, setPosts] = useState([]);  // State untuk menyimpan daftar postingan
-  const { user } = useContext(AuthContext);
+  const { user } = useContext(AuthContext);  // Mengambil informasi pengguna dari konteks autentikasi
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -23,7 +23,7 @@ export default function Feed({ username }) {
       );
     };
     fetchPosts(); // Memanggil fungsi untuk mengambil postingan saat komponen dimuat
-  }, [username, user._id]); 
+  }, [username, user._id]); // Efek akan dipicu ketika username atau user._id berubah
 
   return (
     <div className="feed">
