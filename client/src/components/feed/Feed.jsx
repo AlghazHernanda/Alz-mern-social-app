@@ -29,7 +29,7 @@ export default function Feed({ username }) {
     <div className="feed">
       <div className="feedWrapper">
         {(!username || username === user.username) && <Share />}
-         {/* Mapping dan menampilkan setiap postingan menggunakan komponen Post */}
+         {/* Mapping dan menampilkan setiap postingan menggunakan komponen Post, jadi dilooping terlebih dahulu */}
         {posts.map((p) => (
           <Post key={p._id} post={p} />
         ))}
