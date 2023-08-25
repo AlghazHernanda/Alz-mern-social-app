@@ -11,7 +11,7 @@ export default function Post({ post }) {
   const [isLiked, setIsLiked] = useState(false); // Menandai apakah pengguna sudah menyukai postingan
   const [user, setUser] = useState({}); // Informasi pengguna yang membuat postingan
   const PF = process.env.REACT_APP_PUBLIC_FOLDER; //// Path ke folder public
-  const { user: currentUser } = useContext(AuthContext);
+  const { user: currentUser } = useContext(AuthContext); //// Mengambil informasi pengguna yang sedang masuk
 
   useEffect(() => {
     setIsLiked(post.likes.includes(currentUser._id));
