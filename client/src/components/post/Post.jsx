@@ -14,7 +14,7 @@ export default function Post({ post }) {
   const { user: currentUser } = useContext(AuthContext); //// Mengambil informasi pengguna yang sedang masuk
 
   useEffect(() => {
-    setIsLiked(post.likes.includes(currentUser._id));
+    setIsLiked(post.likes.includes(currentUser._id)); // Mengatur status apakah pengguna telah menyukai postingan ini
   }, [currentUser._id, post.likes]);
 
   useEffect(() => {
