@@ -19,7 +19,7 @@ export default function Post({ post }) {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/users?userId=${post.userId}`);
+      const res = await axios.get(`/users?userId=${post.userId}`); // Mengambil informasi pengguna yang membuat postingan
       setUser(res.data);
     };
     fetchUser();
