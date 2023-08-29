@@ -27,7 +27,7 @@ export default function Post({ post }) {
 
   const likeHandler = () => {
     try {
-      axios.put("/posts/" + post._id + "/like", { userId: currentUser._id });
+      axios.put("/posts/" + post._id + "/like", { userId: currentUser._id }); // Mengirim permintaan ke server untuk menyukai atau tidak menyukai postingan
     } catch (err) {}
     setLike(isLiked ? like - 1 : like + 1);
     setIsLiked(!isLiked);
