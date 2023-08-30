@@ -29,7 +29,7 @@ export default function Post({ post }) {
     try {
       axios.put("/posts/" + post._id + "/like", { userId: currentUser._id }); // Mengirim permintaan ke server untuk menyukai atau tidak menyukai postingan
     } catch (err) {}
-    setLike(isLiked ? like - 1 : like + 1);
+    setLike(isLiked ? like - 1 : like + 1); // Mengupdate jumlah like sesuai dengan aksi pengguna
     setIsLiked(!isLiked);
   };
   return (
