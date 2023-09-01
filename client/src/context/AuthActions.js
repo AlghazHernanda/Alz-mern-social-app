@@ -1,3 +1,5 @@
+// Action: LoginStart
+// Ini adalah aksi yang digunakan untuk menandai permulaan proses login.
 export const LoginStart = (userCredentials) => ({
   type: "LOGIN_START",
 });
