@@ -12,6 +12,7 @@ export const LoginSuccess = (user) => ({
   payload: user,
 });
 
+// Action: LoginFailure
 export const LoginFailure = () => ({
   type: "LOGIN_FAILURE",
 });
