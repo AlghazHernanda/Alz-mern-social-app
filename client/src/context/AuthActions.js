@@ -13,6 +13,7 @@ export const LoginSuccess = (user) => ({
 });
 
 // Action: LoginFailure
+// Ini adalah aksi yang digunakan untuk menandai kegagalan proses login.
 export const LoginFailure = () => ({
   type: "LOGIN_FAILURE",
 });
