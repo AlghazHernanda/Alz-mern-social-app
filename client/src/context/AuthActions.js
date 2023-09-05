@@ -18,6 +18,7 @@ export const LoginFailure = () => ({
   type: "LOGIN_FAILURE",
 });
 
+// Action: Follow
 export const Follow = (userId) => ({
   type: "FOLLOW",
   payload: userId,
