@@ -19,6 +19,7 @@ export const LoginFailure = () => ({
 });
 
 // Action: Follow
+// Ini adalah aksi yang digunakan untuk menandai ketika pengguna mengikuti (follow) pengguna lain.
 export const Follow = (userId) => ({
   type: "FOLLOW",
   payload: userId,
@@ -28,3 +29,5 @@ export const Unfollow = (userId) => ({
   type: "UNFOLLOW",
   payload: userId,
 });
+
+
