@@ -3,7 +3,7 @@ import AuthReducer from "./AuthReducer";
 
 const INITIAL_STATE = {
   user:JSON.parse(localStorage.getItem("user")) || null, // Mendapatkan data pengguna dari localStorage jika ada, atau set null jika tidak ada
-  isFetching: false,
+  isFetching: false, // Inisialisasi status pemrosesan yang sedang berjalan
   error: false,
 };
 
