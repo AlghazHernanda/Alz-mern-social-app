@@ -11,7 +11,7 @@ const INITIAL_STATE = {
 export const AuthContext = createContext(INITIAL_STATE);  // Membuat konteks AuthContext dengan nilai awal INITIAL_STATE
 
 export const AuthContextProvider = ({ children }) => {
-  const [state, dispatch] = useReducer(AuthReducer, INITIAL_STATE);
+  const [state, dispatch] = useReducer(AuthReducer, INITIAL_STATE); // Menggunakan useReducer untuk mengelola state dan dispatch
   
   useEffect(()=>{
     localStorage.setItem("user", JSON.stringify(state.user))
