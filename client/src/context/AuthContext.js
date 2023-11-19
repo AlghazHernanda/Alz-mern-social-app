@@ -14,7 +14,7 @@ export const AuthContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(AuthReducer, INITIAL_STATE); // Menggunakan useReducer untuk mengelola state dan dispatch
   
   useEffect(()=>{
-    localStorage.setItem("user", JSON.stringify(state.user)) // Menyimpan data pengguna ke localStorage ketika state.user berubah
+    localStorage.setItem("user", JSON.stringify(state.user)) // Menyimpan data pengguna ke localStorage yatiu storage aplikasi ini ketika state.user berubah
   },[state.user])
   
   return (
