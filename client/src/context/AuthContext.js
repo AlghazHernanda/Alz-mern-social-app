@@ -15,7 +15,7 @@ export const AuthContextProvider = ({ children }) => {
   
   useEffect(()=>{
     localStorage.setItem("user", JSON.stringify(state.user)) // Menyimpan data pengguna ke localStorage yatiu storage aplikasi ini ketika state.user berubah
-  },[state.user])
+  },[state.user]) //state user
   
   return (
     <AuthContext.Provider
